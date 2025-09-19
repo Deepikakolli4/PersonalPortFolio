@@ -397,6 +397,7 @@ article .icon {
   gap: 4rem;
   display: flex;
   flex-wrap: nowrap;
+  height: fit-content;
   width: fit-content;
   animation: infinite-scroll 60s linear infinite;
 }
@@ -406,13 +407,18 @@ article .icon {
 }
 
 .color-container {
-  margin: 4rem;
-  width: 160%;
-  height: 80%;
+  margin: 2rem;
+  width: 400px;
+  height: 500px;
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
   transition: transform 300ms ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .color-container:hover {
@@ -423,9 +429,11 @@ article .icon {
 .project-img {
   border-radius: 2rem;
   width: 90%;
-  height: 90%;
+  height: 60%;
   transition: transform 300ms ease;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  object-fit: cover;
 }
 
 .project-img:hover {
@@ -434,8 +442,24 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.5rem 0;
   color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.project-description {
+  margin: 0.5rem 1rem;
+  color: rgb(85, 85, 85);
+  text-align: center;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .project-btn {
